@@ -26,6 +26,17 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/login')
+def login():
+    """Render website's home page."""
+    return render_template('login.html')
+
+
+@app.route('/signup')
+def signup():
+    """Render website's home page."""
+    return render_template('signup.html')
+
 @app.route('/about/')
 def about():
     """Render the website's about page."""

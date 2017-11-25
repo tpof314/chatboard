@@ -40,5 +40,3 @@ def get_all_messages():
 	cursor.close()
 	conn.close()
 	return results
-
-print(get_all_messages())

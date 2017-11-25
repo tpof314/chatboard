@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="static/css/bulma.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Chat board 1.0</title>
+</head>
+<body>
+
+<!-- navigation bar -->
+<nav class="navbar is-link">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="static/img/cat.png" alt="Bulma: a modern CSS framework based on Flexbox" width="60" height="28">
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="https://bulma.io/">
+        Home
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Docs
+        </a>
+        <div class="navbar-dropdown is-boxed">
+          <a class="navbar-item" href="/documentation/overview/start/">
+            Overview
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+            Modifiers
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+            Elements
+          </a>
+          <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+            Components
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <a class="button is-warning">
+              <span class="icon">
+                <i class="fa fa-sign-in"></i>
+              </span>
+              <span>
+                LOGIN
+              </span>
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-primary" >
+              <span class="icon">
+                <i class="fa fa-user-plus"></i>
+              </span>
+              <span>Sign-Up</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<br/>
+
+<!-- Main Container -->
+<div class="container">
+
+	<!-- search bar -->
+	<div class="columns">
+	  <div class="column" style="text-align: right"><strong>Search Topic</strong></div>
+	  <div class="column is-three-quarters"><input class="input" type="text" placeholder="Text input"></div>
+	  <div class="column"><a class="button is-primary" style="width: 80%"><i class="fa fa-search"></i></a></div>
+	</div>
+
+	<!-- messages -->
+	<div class="box">
+	  <article class="media">
+	    <div class="media-left">
+	      <figure class="image is-64x64">
+	        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	      </figure>
+	    </div>
+	    <div class="media-content">
+	      <div class="content">
+	        <p>
+	          <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+	          <br>
+	          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+	        </p>
+	      </div>
+	    </div>
+	  </article>
+	</div>
+	<div class="box">
+	  <article class="media">
+	    <div class="media-left">
+	      <figure class="image is-64x64">
+	        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	      </figure>
+	    </div>
+	    <div class="media-content">
+	      <div class="content">
+	        <p>
+	          <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+	          <br>
+	          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+	        </p>
+	      </div>
+	    </div>
+	  </article>
+	</div>
+	<div class="box">
+	  <article class="media">
+	    <div class="media-left">
+	      <figure class="image is-64x64">
+	        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	      </figure>
+	    </div>
+	    <div class="media-content">
+	      <div class="content">
+	        <p>
+	          <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+	          <br>
+	          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+	        </p>
+	      </div>
+	    </div>
+	  </article>
+	</div>
+	<div class="box">
+	  <article class="media">
+	    <div class="media-left">
+	      <figure class="image is-64x64">
+	        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	      </figure>
+	    </div>
+	    <div class="media-content">
+	      <div class="content">
+	        <p>
+	          <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+	          <br>
+	          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+	        </p>
+	      </div>
+	    </div>
+	  </article>
+	</div>
+	<div class="box">
+	  <article class="media">
+	    <div class="media-left">
+	      <figure class="image is-64x64">
+	        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	      </figure>
+	    </div>
+	    <div class="media-content">
+	      <div class="content">
+	        <p>
+	          <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+	          <br>
+	          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+	        </p>
+	      </div>
+	    </div>
+	  </article>
+	</div>
+
+
+	<!-- pages -->
+	<nav class="pagination" role="navigation" aria-label="pagination">
+	  <a class="pagination-previous" title="This is the first page" disabled>Previous</a>
+	  <a class="pagination-next">Next page</a>
+	  <ul class="pagination-list">
+	    <li>
+	      <a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a>
+	    </li>
+	    <li>
+	      <a class="pagination-link" aria-label="Goto page 2">2</a>
+	    </li>
+	    <li>
+	      <a class="pagination-link" aria-label="Goto page 3">3</a>
+	    </li>
+	  </ul>
+	</nav>
+
+</div>
+
+<!-- footer-->
+<br/>
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

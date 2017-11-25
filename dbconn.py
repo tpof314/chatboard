@@ -8,12 +8,19 @@ username = "vldxsnrxvnvabm"
 password = "dd6febbadd69166681fd04fbfd96b54efd145f4419156bd71a7edc3d4b968a07"
 
 
-def get_all_messages():
+def get_dbconnect():
 	conn = pg8000.connect(host=host, port=port, database=database, 
 		user=username, password=password, ssl=True)
+	return conn
+
+def get_all_messages():
+	conn = get_dbconnect()
 
 	cursor  = conn.cursor()
-	sql_cmd = "select * from messages;"
+	sql_cmd = """
+		select mid, content, posttime, realname, username, avatar  from messages
+		join users on users.uid = messages.uid;
+	"""
 
 	cursor.execute(sql_cmd)
 	query_results = cursor.fetchall()
@@ -24,7 +31,9 @@ def get_all_messages():
 			"mid": item[0],
 			"content": item[1],
 			"posttime": item[2],
-			"uid": item[3]
+			"realname": item[3],
+			"username": item[4],
+			"avatar":   item[5]
 		}
 		results.append(message)
 

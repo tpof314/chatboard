@@ -8,6 +8,7 @@ This file creates your application.
 
 import os
 import glob
+import dbconn
 from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
@@ -23,7 +24,8 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'chat_board_app')
 @app.route('/')
 def index():
     """Render website's home page."""
-    return render_template('index.html')
+    messages = dbconn.get_all_messages()
+    return render_template('index.html', messages=messages)
 
 
 @app.route('/login')

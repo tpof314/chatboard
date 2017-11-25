@@ -10,8 +10,11 @@
 	  <div class="column is-three-quarters"><input class="input" type="text" placeholder="Text input"></div>
 	  <div class="column"><a class="button is-primary" style="width: 80%"><i class="fa fa-search"></i></a></div>
 	</div>
+	
 
 	<!-- messages -->
+
+	{%  for message in messages %}
 	<div class="box">
 	  <article class="media">
 	    <div class="media-left">
@@ -22,14 +25,17 @@
 	    <div class="media-content">
 	      <div class="content">
 	        <p>
-	          <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+	          <strong>{{ message.uid }}</strong> <small>{{ message.posttime }}</small>
 	          <br>
-	          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+	          {{ message.content }}
 	        </p>
 	      </div>
 	    </div>
 	  </article>
 	</div>
+	{%  endfor %}
+
+
 	<div class="box">
 	  <article class="media">
 	    <div class="media-left">
